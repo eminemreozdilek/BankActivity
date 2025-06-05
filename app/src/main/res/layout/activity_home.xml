@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ekran: Ana Sayfa (Bakiye + Dört adet “circular” ikon + Profil ikonu) -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Başlık -->
+        <TextView
+            android:id="@+id/tvHomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart Online Payment"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:paddingBottom="24dp" />
+
+        <!-- Bakiye Metni -->
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₽ 103262.0"
+            android:textSize="36sp"
+            android:textColor="#000000"
+            android:paddingBottom="32dp" />
+
+        <!-- İlk Satır: QR Payment & Upload Money -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <!-- QR Payment Butonu -->
+            <LinearLayout
+                android:id="@+id/btnQrPayment"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/circle_button_bg"
+                android:layout_marginEnd="12dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_qr"  
+                    android:contentDescription="QR Payment" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QR Payment"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Upload Money Butonu -->
+            <LinearLayout
+                android:id="@+id/btnUploadMoney"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/circle_button_bg"
+                android:layout_marginStart="12dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_upload"  
+                    android:contentDescription="Upload Money" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Money"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- İkinci Satır: Payments & Top Up Balance -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <!-- Payments Butonu -->
+            <LinearLayout
+                android:id="@+id/btnPayments"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/circle_button_bg"
+                android:layout_marginEnd="12dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_payments"  
+                    android:contentDescription="Payments" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payments"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Top Up Balance Butonu -->
+            <LinearLayout
+                android:id="@+id/btnTopUp"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/circle_button_bg"
+                android:layout_marginStart="12dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_topup"  
+                    android:contentDescription="Top Up Balance" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top Up Balance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Üçüncü Satır: My Cards & Statistics -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <!-- My Cards Butonu -->
+            <LinearLayout
+                android:id="@+id/btnMyCards"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/circle_button_bg"
+                android:layout_marginEnd="12dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_cards"  
+                    android:contentDescription="My Cards" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Cards"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Statistics Butonu -->
+            <LinearLayout
+                android:id="@+id/btnStatistics"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/circle_button_bg"
+                android:layout_marginStart="12dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_statistics"  
+                    android:contentDescription="Statistics" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Statistics"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Profil İkonu (Alt Merkezde) -->
+        <ImageButton
+            android:id="@+id/btnProfile"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_profile"
+            android:background="@null"
+            android:contentDescription="Profile" />
+
+    </LinearLayout>
+</ScrollView>

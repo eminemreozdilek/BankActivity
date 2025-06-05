@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ekran: Hesap Bilgileri (Transaction List + Request Refund) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Geri Düğmesi -->
+    <Button
+        android:id="@+id/btnBackFromAccountInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="< Back"
+        android:textAllCaps="false" />
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/tvAccountInfoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Information"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Transaction listesi için RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <!-- Request Refund Düğmesi -->
+    <Button
+        android:id="@+id/btnRequestRefund"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="Request Refund"
+        android:textAllCaps="false"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_widthPercent="60%" />
+
+</LinearLayout>

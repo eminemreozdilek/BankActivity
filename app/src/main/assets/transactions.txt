@@ -1,0 +1,12 @@
+2025-01-12 12:30,Other,Chick-Chick,100.00
+2025-01-12 12:42,Tickets,Cinema,500.00
+2025-01-12 13:32,Coffee,Latte,400.00
+2025-01-12 14:11,Electronics,Powerbank,10000.00
+2025-01-13 09:34,Other,BBQ,199.98
+2025-01-18 02:13,Clothing,Jeans,2300.00
+2025-01-19 16:14,Tickets,Theater,1030.00
+2025-01-19 16:58,Clothing,Jacket,1260.00
+2025-01-22 12:12,Clothing,Cap,1460.00
+2025-01-23 15:23,Other,Chick-Chick,1100.00
+2025-01-23 17:04,Coffee,Latte,800.00
+2025-01-25 10:00,Error,Refund Attempt,-9900.00

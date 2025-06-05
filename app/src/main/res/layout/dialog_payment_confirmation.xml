@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ödeme Onayı İçin Dialog Layout (Temel Bilgiler + Confirm/Cancel) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:background="@drawable/dialog_background">
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Confirmation"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tarih / Saat -->
+    <TextView
+        android:id="@+id/tvDialogDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: Wed, 17 Jan 2025 16:47:09 GMT+03:00"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Açıklama -->
+    <TextView
+        android:id="@+id/tvDialogDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description: Charger Device"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Tutar -->
+    <TextView
+        android:id="@+id/tvDialogAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount: ₽ 1000.00"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Düğmelerin kapsayıcısı -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <!-- Cancel Butonu -->
+        <Button
+            android:id="@+id/btnDialogCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Confirm Butonu -->
+        <Button
+            android:id="@+id/btnDialogConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>
